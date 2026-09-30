@@ -45,7 +45,7 @@
         /* HEADER */
         header {
             background-color: var(--white);
-            padding: 1.5rem 5%;
+            padding: 1rem 5%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,15 +55,11 @@
             z-index: 1000;
         }
 
-        .logo-text {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-green);
-            letter-spacing: 2px;
-        }
-
-        .logo-text span {
-            color: var(--accent-gold);
+        /* Estilo para la imagen del logo en el header */
+        .header-logo {
+            max-height: 70px; /* Ajusta la altura máxima según prefieras */
+            width: auto;
+            display: block;
         }
 
         /* HERO SECTION */
@@ -292,14 +288,16 @@
             .benefits-grid { grid-template-columns: 1fr; }
             .cta-section h2 { font-size: 1.8rem; }
             .video-grid { grid-template-columns: 1fr; }
+            .header-logo { max-height: 50px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER CON IMAGEN -->
     <header>
-        <div class="logo-text">AGARA<span>.</span></div>
+        <!-- Reemplazamos el texto por la imagen del logo -->
+        <img src="https://github.com/emprendedr/aicaferico/blob/main/A0FE320C-0BEA-4A8E-81B1-68A1B4C5AD33.png?raw=true" alt="AGARA Logo" class="header-logo">
     </header>
 
     <!-- HERO SECTION -->
@@ -317,20 +315,20 @@
 
         <div class="video-grid">
             
-            <!-- Video 1 -->
+            <!-- Video 1 (Antes era el 3: "Así comenzó: Lanzamiento") -->
             <div class="video-card">
                 <div class="video-wrapper">
-                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
-                        <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/dnjfl6?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.341%">
+                        <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/3jga17?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
                     </div>
                 </div>
                 <div class="video-info">
-                    <h3><span class="num">01</span> Conoce AGARA</h3>
-                    <p>Una introducción a nuestra visión, el producto y el modelo de negocio.</p>
+                    <h3><span class="num">01</span> Así comenzó: Lanzamiento</h3>
+                    <p>Conoce la historia, el origen y el momento clave de nuestra expansión.</p>
                 </div>
             </div>
 
-            <!-- Video 2 -->
+            <!-- Video 2 (Se queda igual: "El café y tu bienestar") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
@@ -343,20 +341,20 @@
                 </div>
             </div>
 
-            <!-- Video 3 -->
+            <!-- Video 3 (Antes era el 1: "Conoce AGARA") -->
             <div class="video-card">
                 <div class="video-wrapper">
-                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.341%">
-                        <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/3jga17?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
+                        <iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/dnjfl6?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
                     </div>
                 </div>
                 <div class="video-info">
-                    <h3><span class="num">03</span> Así comenzó: Lanzamiento</h3>
-                    <p>Conoce la historia, el origen y el momento clave de nuestra expansión.</p>
+                    <h3><span class="num">03</span> Conoce AGARA</h3>
+                    <p>Una introducción a nuestra visión, el producto y el modelo de negocio.</p>
                 </div>
             </div>
 
-            <!-- Video 4 -->
+            <!-- Video 4 (Se queda igual: "Reto para lograr tus objetivos") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
