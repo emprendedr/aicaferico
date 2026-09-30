@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGARA - Café Funcional, Comunidad y Oportunidad</title>
+    <title>@hora - Café Funcional, Comunidad y Oportunidad</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* VARIABLES DE COLOR (Psicología del color para conversión) */
+        /* VARIABLES DE COLOR */
         :root {
             --primary-green: #0b6e4f; /* Confianza, salud, dinero */
             --accent-gold: #f4b41a;   /* Energía, café, éxito */
@@ -45,7 +45,7 @@
         /* HEADER */
         header {
             background-color: var(--white);
-            padding: 1rem 5%;
+            padding: 1.2rem 5%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,21 +55,36 @@
             z-index: 1000;
         }
 
-        /* Estilo para la imagen del logo en el header */
-        .header-logo {
-            max-height: 70px; /* Ajusta la altura máxima según prefieras */
-            width: auto;
-            display: block;
+        /* Título del encabezado cambiado a @hora */
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: var(--accent-gold);
         }
 
         /* HERO SECTION */
         .hero {
             background: linear-gradient(135deg, rgba(11, 110, 79, 0.05) 0%, rgba(244, 180, 26, 0.05) 100%);
-            padding: 5rem 5% 4rem;
+            padding: 4rem 5% 5rem;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        /* Estilo para la imagen amplia en el Hero */
+        .hero-image {
+            max-width: 100%;
+            width: 750px; /* Ancho máximo deseado */
+            height: auto;
+            margin-bottom: 2.5rem;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1)); /* Sombra suave para resaltar */
         }
 
         .hero-tagline {
@@ -86,7 +101,7 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             max-width: 800px;
             margin-bottom: 1.5rem;
         }
@@ -185,7 +200,6 @@
             position: relative;
             width: 100%;
             background: #000;
-            /* Los estilos de padding-bottom vienen dados por el iframe para mantener la proporción */
         }
 
         .video-info {
@@ -211,7 +225,7 @@
             color: #666;
         }
 
-        /* SECCIÓN DE BENEFICIOS (AICA Férico / Salud) */
+        /* SECCIÓN DE BENEFICIOS */
         .benefits-section {
             background-color: var(--white);
             border-radius: 20px;
@@ -233,6 +247,7 @@
             padding: 2rem;
             border-radius: 12px;
             border-left: 5px solid var(--accent-gold);
+            text-align: left;
         }
 
         .benefit-item h4 {
@@ -283,32 +298,34 @@
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
+            .hero h1 { font-size: 2rem; }
             .hero p { font-size: 1rem; }
+            .hero-image { width: 100%; margin-bottom: 2rem; }
             .benefits-grid { grid-template-columns: 1fr; }
             .cta-section h2 { font-size: 1.8rem; }
             .video-grid { grid-template-columns: 1fr; }
-            .header-logo { max-height: 50px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON IMAGEN -->
+    <!-- HEADER CON EL NUEVO TÍTULO -->
     <header>
-        <!-- Reemplazamos el texto por la imagen del logo -->
-        <img src="https://github.com/emprendedr/aicaferico/blob/main/A0FE320C-0BEA-4A8E-81B1-68A1B4C5AD33.png?raw=true" alt="AGARA Logo" class="header-logo">
+        <div class="logo-text">@hora<span>.</span></div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION CON LA IMAGEN AMPLIA -->
     <section class="hero">
+        <!-- Imagen movida aquí para que sea más grande y visible -->
+        <img src="https://github.com/emprendedr/aicaferico/blob/main/A0FE320C-0BEA-4A8E-81B1-68A1B4C5AD33.png?raw=true" alt="AGARA Logo" class="hero-image">
+        
         <span class="hero-tagline">CAFÉ FUNCIONAL · COMUNIDAD · OPORTUNIDAD</span>
         <h1>El café ya es parte de tu día. Descubre la oportunidad detrás de AGARA.</h1>
         <p>Conoce el café funcional de AGARA y su propuesta para embajadores fundadores. Los detalles, paso a paso, en los videos.</p>
         <a href="#registro" class="btn-primary">Sé Pionero y Posiciónate</a>
     </section>
 
-    <!-- SECCIÓN DE VIDEOS -->
+    <!-- SECCIÓN DE VIDEOS (ORDEN ACTUALIZADO) -->
     <section class="section-container" id="videos">
         <h2 class="section-title">Conoce AGARA en 4 Videos</h2>
         <p class="section-subtitle">Mira los videos y descubre la propuesta paso a paso. Hemos preparado un recorrido claro para que tomes la mejor decisión.</p>
@@ -391,7 +408,6 @@
     <section class="cta-section" id="registro">
         <h2>Sé Pionero y Posiciónate para el Lanzamiento</h2>
         <p>No dejes pasar la oportunidad de estar en la primera línea. Asegura tu lugar como Embajador Fundador.</p>
-        <!-- Botón de registro usando el enlace proporcionado -->
         <a href="https://forms.gle/GZJaHkvAdPb7sraD7" target="_blank" class="btn-accent">Registrarme Ahora</a>
     </section>
 
