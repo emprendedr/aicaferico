@@ -6,22 +6,17 @@
     <title>@hora - Café Funcional, Comunidad y Oportunidad</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* VARIABLES DE COLOR */
         :root {
-            --primary-green: #0b6e4f; /* Confianza, salud, dinero */
-            --accent-gold: #f4b41a;   /* Energía, café, éxito */
-            --bg-light: #f8f9fa;      /* Limpieza, claridad */
-            --text-dark: #2c3e50;     /* Legibilidad, seriedad */
+            --primary-green: #0b6e4f;
+            --accent-gold: #f4b41a;
+            --bg-light: #f8f9fa;
+            --text-dark: #2c3e50;
             --white: #ffffff;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --whatsapp-green: #25D366;
         }
 
-        /* RESET Y ESTILOS BASE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -31,16 +26,8 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3 {
-            color: var(--primary-green);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        a {
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
+        h1, h2, h3 { color: var(--primary-green); margin-bottom: 1rem; line-height: 1.2; }
+        a { text-decoration: none; transition: all 0.3s ease; }
 
         /* HEADER */
         header {
@@ -62,11 +49,9 @@
             letter-spacing: 1px;
         }
 
-        .logo-text span {
-            color: var(--accent-gold);
-        }
+        .logo-text span { color: var(--accent-gold); }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
             background: linear-gradient(135deg, rgba(11, 110, 79, 0.05) 0%, rgba(244, 180, 26, 0.05) 100%);
             padding: 4rem 5% 5rem;
@@ -98,18 +83,8 @@
             display: inline-block;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            max-width: 800px;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-bottom: 2rem;
-            color: #555;
-        }
+        .hero h1 { font-size: 2.8rem; max-width: 800px; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 2rem; color: #555; }
 
         /* BOTONES */
         .btn-primary {
@@ -150,18 +125,9 @@
             box-shadow: 0 8px 25px rgba(244, 180, 26, 0.5);
         }
 
-        /* SECCIONES GENERALES */
-        .section-container {
-            padding: 4rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-        }
+        /* SECCIONES */
+        .section-container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 1rem; }
 
         .section-subtitle {
             text-align: center;
@@ -173,7 +139,7 @@
             margin-right: auto;
         }
 
-        /* GRID DE VIDEOS */
+        /* VIDEOS */
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -194,15 +160,8 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.12);
         }
 
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            background: #000;
-        }
-
-        .video-info {
-            padding: 1.5rem;
-        }
+        .video-wrapper { position: relative; width: 100%; background: #000; }
+        .video-info { padding: 1.5rem; }
 
         .video-info h3 {
             font-size: 1.2rem;
@@ -212,18 +171,10 @@
             gap: 10px;
         }
 
-        .video-info h3 .num {
-            color: var(--accent-gold);
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
+        .video-info h3 .num { color: var(--accent-gold); font-size: 1.5rem; font-weight: 700; }
+        .video-info p { font-size: 0.95rem; color: #666; }
 
-        .video-info p {
-            font-size: 0.95rem;
-            color: #666;
-        }
-
-        /* SECCIÓN DE BENEFICIOS */
+        /* BENEFICIOS */
         .benefits-section {
             background-color: var(--white);
             border-radius: 20px;
@@ -248,11 +199,7 @@
             text-align: left;
         }
 
-        .benefit-item h4 {
-            color: var(--primary-green);
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
+        .benefit-item h4 { color: var(--primary-green); font-size: 1.3rem; margin-bottom: 1rem; }
 
         /* CTA FINAL */
         .cta-section {
@@ -266,16 +213,47 @@
             box-shadow: 0 20px 40px rgba(11, 110, 79, 0.3);
         }
 
-        .cta-section h2 {
+        .cta-section h2 { color: var(--white); font-size: 2.5rem; margin-bottom: 1rem; }
+        .cta-section p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+
+        /* BOTÓN FLOTANTE WHATSAPP ANIMADO */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp-green);
             color: var(--white);
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            z-index: 1100;
+            animation: pulse-whatsapp 2s infinite;
         }
 
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.7);
+            animation-play-state: paused;
+        }
+
+        .whatsapp-float svg { width: 20px; height: 20px; fill: white; }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5), 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5), 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5), 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
 
         /* FOOTER */
@@ -302,34 +280,38 @@
             .benefits-grid { grid-template-columns: 1fr; }
             .cta-section h2 { font-size: 1.8rem; }
             .video-grid { grid-template-columns: 1fr; }
+            .whatsapp-float {
+                bottom: 15px;
+                right: 15px;
+                padding: 12px 16px;
+                font-size: 0.8rem;
+            }
+            .whatsapp-float svg { width: 16px; height: 16px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON EL NUEVO TÍTULO -->
+    <!-- HEADER -->
     <header>
         <div class="logo-text">@hora<span>.</span></div>
     </header>
 
-    <!-- HERO SECTION CON LA IMAGEN AMPLIA -->
+    <!-- HERO -->
     <section class="hero">
-        <img src="https://github.com/emprendedr/aicaferico/blob/main/A0FE320C-0BEA-4A8E-81B1-68A1B4C5AD33.png?raw=true" alt="AGARA Logo" class="hero-image">
-        
+        <img src="https://raw.githubusercontent.com/emprendedr/aicaferico/main/714B939F-7BCA-4FFD-80B2-537D52B1FFB9.png" alt="Agara Logo" class="hero-image">
         <span class="hero-tagline">CAFÉ FUNCIONAL · COMUNIDAD · OPORTUNIDAD</span>
-        <h1>El café ya es parte de tu día. Descubre la oportunidad detrás de AGARA.</h1>
-        <p>Conoce el café funcional de AGARA y su propuesta para embajadores fundadores. Los detalles, paso a paso, en los videos.</p>
+        <h1>El café ya es parte de tu día. Descubre la oportunidad detrás de Agara.</h1>
+        <p>Conoce el café funcional de Agara y su propuesta para embajadores fundadores. Los detalles, paso a paso, en los videos.</p>
         <a href="#registro" class="btn-primary">Sé Pionero y Posiciónate</a>
     </section>
 
-    <!-- SECCIÓN DE VIDEOS (ORDEN ACTUALIZADO) -->
+    <!-- VIDEOS -->
     <section class="section-container" id="videos">
-        <h2 class="section-title">Conoce AGARA en 4 Videos</h2>
+        <h2 class="section-title">Conoce Agara en 4 Videos</h2>
         <p class="section-subtitle">Mira los videos y descubre la propuesta paso a paso. Hemos preparado un recorrido claro para que tomes la mejor decisión.</p>
 
         <div class="video-grid">
-            
-            <!-- Video 1 (Antes era el 3: "Así comenzó: Lanzamiento") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.341%">
@@ -342,7 +324,6 @@
                 </div>
             </div>
 
-            <!-- Video 2 (Se queda igual: "El café y tu bienestar") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
@@ -355,7 +336,6 @@
                 </div>
             </div>
 
-            <!-- Video 3 (Antes era el 1: "Conoce AGARA") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
@@ -363,12 +343,11 @@
                     </div>
                 </div>
                 <div class="video-info">
-                    <h3><span class="num">03</span> Conoce AGARA</h3>
+                    <h3><span class="num">03</span> Plan de compensación</h3>
                     <p>Una introducción a nuestra visión, el producto y el modelo de negocio.</p>
                 </div>
             </div>
 
-            <!-- Video 4 (Se queda igual: "Reto para lograr tus objetivos") -->
             <div class="video-card">
                 <div class="video-wrapper">
                     <div style="position:relative; width:100%; height:0px; padding-bottom:56.271%">
@@ -377,21 +356,20 @@
                 </div>
                 <div class="video-info">
                     <h3><span class="num">04</span> Reto para lograr tus objetivos</h3>
-                    <p>Descubre el plan de acción y las 8 formas de ganar con AICA Férico.</p>
+                    <p>Descubre el plan de acción y las 8 formas de ganar con Agara.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- SECCIÓN DE BENEFICIOS ADICIONALES -->
+    <!-- BENEFICIOS -->
     <section class="section-container">
         <div class="benefits-section">
-            <h2 class="section-title">¿Por qué unirte a AGARA?</h2>
+            <h2 class="section-title">¿Por qué unirte a Agara?</h2>
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <h4>8 Formas de Ganar</h4>
-                    <p>AICA Férico te ofrece un modelo de negocio robusto con múltiples fuentes de ingresos. No dependas de una sola vía para crecer.</p>
+                    <p>Agara te ofrece un modelo de negocio robusto con múltiples fuentes de ingresos. No dependas de una sola vía para crecer.</p>
                 </div>
                 <div class="benefit-item">
                     <h4>Bienestar Integral</h4>
@@ -401,19 +379,29 @@
         </div>
     </section>
 
-    <!-- CTA FINAL / REGISTRO (ENLACE ACTUALIZADO) -->
+    <!-- CTA FINAL / REGISTRO -->
     <section class="cta-section" id="registro">
         <h2>Sé Pionero y Posiciónate para el Lanzamiento</h2>
         <p>No dejes pasar la oportunidad de estar en la primera línea. Asegura tu lugar como Embajador Fundador.</p>
-        <!-- Enlace actualizado a https://www.agaralife.com/aicaferico -->
-        <a href="https://www.agaralife.com/aicaferico" target="_blank" class="btn-accent">Registrarme Ahora</a>
+
+        <a href="https://www.agaralife.com/aicaferico" target="_blank" rel="noopener noreferrer" class="btn-accent">Descubre más</a>
+        
+        <p style="margin-top:1.2rem; font-size:1.05rem; opacity:0.95;">Ver descripción de productos y cómo empezar hoy</p>
     </section>
 
-    <!-- FOOTER / LEGAL -->
+    <!-- BOTÓN FLOTANTE WHATSAPP ANIMADO -->
+    <a href="https://wa.me/13232850508?text=Hola%2C%20necesito%20ayuda%20para%20ordenar" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Necesita ayuda para Ordenar?">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Necesita ayuda para Ordenar?
+    </a>
+
+    <!-- FOOTER -->
     <footer>
-        <p>Página independiente. Participación sujeta a condiciones de AGARA; no garantiza ingresos ni una posición.</p>
-        <p>AGARA es una marca de su respectivo titular.</p>
-        <p style="margin-top: 1rem; color: #555;">&copy; 2026 AGARA. Todos los derechos reservados.</p>
+        <p><strong>aicafeptidos</strong> es distribuidor independiente de Agara. No es dueño de la marca Agara ni garantiza ingresos ni una posición.</p>
+        <p>Agara es una marca de su respectivo titular.</p>
+        <p style="margin-top: 1rem; color: #555;">&copy; 2026 aicafeptidos. Todos los derechos reservados.</p>
     </footer>
 
 </body>
